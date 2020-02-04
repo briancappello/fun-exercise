@@ -1,0 +1,48 @@
+User:
+  me:
+    email: a@a.com
+    password: password
+    active: True
+    confirmed_at: now
+    roles: Role(ROLE_ADMIN, ROLE_USER)
+
+Role:
+  ROLE_ADMIN:
+    name: ROLE_ADMIN
+
+  ROLE_USER:
+    name: ROLE_USER
+
+ExerciseType:
+  run:
+    name: Run
+
+  sit_ups:
+    name: Sit Ups
+
+  bouldering:
+    name: Bouldering
+
+Location:
+  movement:
+    name: Movement
+
+Workout:
+  jan_27_2020:
+    date: "2020-01-27"
+    location: Location(movement)
+    user: User(me)
+
+DistanceExercise:
+  jan_27_2020_run:
+    workout: Workout(jan_27_2020)
+    exercise_type: ExerciseType(run)
+    distance: 3
+    duration: 24.5 minutes
+
+RepetitionExercise:
+  jan_27_2020_bouldering:
+    workout: Workout(jan_27_2020)
+    exercise_type: ExerciseType(bouldering)
+    count: 6
+    reps: 1
