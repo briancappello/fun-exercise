@@ -1,10 +1,10 @@
 #### FRONTEND ####
 node_modules/
 /static/
-frontend/app/config.js
 __generated__
 src/globalTypes.ts
 schema.json
+src/index.css
 
 #### BACKEND ####
 *.py[cod]
