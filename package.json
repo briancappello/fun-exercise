@@ -28,7 +28,7 @@
     "graphql": "^14.3.0",
     "history": "^4.9.0",
     "lodash": "^4.17.14",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "path-to-regexp": "^3.0.0",
     "react": "^16.12.0",
